@@ -22,6 +22,7 @@
                     colors: {
                         clifford: '#da373d',
                         baseColor: '#030712',
+                        secondaryColor: '#1DD100',
                     }
                 }
             }
@@ -43,7 +44,7 @@
     <!-- header start -->
     <header class="container mx-auto px-6 pt-5 pb-8 ">
         <!-- navbar start -->
-        <nav>
+        <nav class="mb-9">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -73,7 +74,8 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn bg-[#1DD1001A] hover:bg-[#1DD1001A] border border-[#1DD10066] hover:border-[#1DD10066] text-[#1DD100] text-xl font-bold">
+                    <a
+                        class="btn bg-[#1DD1001A] hover:bg-[#1DD1001A] border border-[#1DD10066] hover:border-[#1DD10066] text-[#1DD100] text-xl font-bold">
                         Bus
                         <span>
                             <img src="./images/bus-icon.png" alt="">
@@ -83,6 +85,25 @@
             </div>
         </nav>
         <!-- navbar end -->
+        <!-- banner section start -->
+         <!-- linear-gradient(180deg, rgba(3, 7, 18, 0.50) 0%, rgba(3, 7, 18, 0.00) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat; -->
+        <section>
+            <div class="hero min-h-screen rounded-[32px]"
+                style="background: linear-gradient(180deg, rgba(3, 7, 18, 0.50) 0%, rgba(3, 7, 18, 0.00) 100%), url('./images/banner.png') lightgray 50% / cover no-repeat;">
+                <div class="hero-content text-neutral-content text-center">
+                    <div class="max-w-2xl">
+                        <h1 class="mb-5 text-6xl font-extrabold">
+                            End-to-End Travel with <br> <span class="text-secondaryColor">P Paribahan</span>
+                        </h1>
+                        <p class="mb-8">
+                            Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
+                        </p>
+                        <button class="btn bg-secondaryColor border-0 text-white font-bold text-lg px-5 hover:bg-secondaryColor">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banner section end -->
     </header>
     <!-- header end -->
     <!-- main start -->
