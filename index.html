@@ -8,25 +8,80 @@
     <!-- tailwind and daisy ui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- raleway and inter goggle font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- customizing config -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        baseColor: '#030712',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
+    <!-- custom css -->
+    <style>
+        .font-raleway {
+            font-family: "Raleway", sans-serif;
+        }
+
+        .font-inter {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="font-raleway">
     <!-- header start -->
-    <header>
+    <header class="container mx-auto px-6 pt-5 pb-8 ">
         <!-- navbar start -->
-         
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-[#030712B2]">
+                            <li class="font-semibold text-lg"><a>Home</a></li>
+                            <li class="font-semibold text-lg"><a>About</a></li>
+                            <li class="font-semibold text-lg"><a>Destination</a></li>
+                            <li class="font-semibold text-lg"><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-3xl lg:text-4xl font-extrabold text-baseColor">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-[#030712B2]">
+                        <li class="font-semibold text-lg"><a>Home</a></li>
+                        <li class="font-semibold text-lg"><a>About</a></li>
+                        <li class="font-semibold text-lg"><a>Destination</a></li>
+                        <li class="font-semibold text-lg"><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-[#1DD1001A] hover:bg-[#1DD1001A] border border-[#1DD10066] hover:border-[#1DD10066] text-[#1DD100] text-xl font-bold">
+                        Bus
+                        <span>
+                            <img src="./images/bus-icon.png" alt="">
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
         <!-- navbar end -->
     </header>
     <!-- header end -->
