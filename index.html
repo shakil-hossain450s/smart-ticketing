@@ -40,7 +40,7 @@
     </style>
 </head>
 
-<body class="font-raleway text-baseColor">
+<body class="font-raleway text-baseColor max-w-[1440px] mx-auto">
     <!-- header start -->
     <header class="container mx-auto px-6 pt-5 pb-8 ">
         <!-- navbar start -->
@@ -63,7 +63,7 @@
                             <li class="font-semibold text-lg"><a>Search</a></li>
                         </ul>
                     </div>
-                    <a class="text-3xl lg:text-4xl font-extrabold text-baseColor">P-Ticket</a>
+                    <a class="text-2xl lg:text-4xl font-extrabold text-baseColor">P-Ticket</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-[#030712B2]">
@@ -146,7 +146,7 @@
     </header>
     <!-- header end -->
     <!-- main start -->
-    <main class="max-w-[1440px] mx-auto">
+    <main>
         <!-- best offer section start -->
         <section class="container mx-auto px-6 my-20">
             <div class="max-w-xl mx-auto text-center">
@@ -264,7 +264,7 @@
                 <!-- select seat container -->
                 <div class="mt-6 p-8 bg-white rounded-3xl grid grid-cols-1 md:grid-cols-5 gap-8">
                     <!-- select your seats container -->
-                    <div class="md:col-span-3 border-r-2 border-dashed pr-8">
+                    <div class="md:col-span-3 md:border-r-2 border-dashed pr-8">
                         <div>
                             <h3 class="text-2xl font-semibold">Select Your Seat</h3>
                             <div class="border-b border-dashed my-4"></div>
@@ -286,7 +286,7 @@
                             </div>
                         </div>
                         <!-- seats container -->
-                        <div class="grid grid-cols-10 gap-6 font-inter font-medium">
+                        <div class="grid grid-cols-10 gap-3 lg:gap-6 font-inter font-medium">
                             <div class="col-span-1 flex flex-col gap-6 *:p-3 text-center *:text-[#03071280]">
                                 <p>A</p>
                                 <p>B</p>
@@ -438,7 +438,31 @@
     </main>
     <!-- main end -->
     <!-- footer start -->
-    <footer></footer>
+    <footer class="bg-[#030712] py-10 lg:py-28">
+        <div class="container mx-auto font-inter  p-10">
+            <div class="footer">
+                <aside>
+                    <h1 class="text-2xl lg:text-4xl font-extrabold text-white">P-Ticket</h1>
+                    <p class="text-white opacity-80 text-lg">
+                        P-Ticket is a digital platform to make your <br> daily commuting better.
+                    </p>
+                </aside>
+                <nav class="w-full flex flex-col items-end">
+                    <h6 class="text-xl font-semibold mb-5 text-white">Download our app</h6>
+                    <a href=""><img src="./images/playstore-icon.png" alt=""></a>
+                </nav>
+            </div>
+            <div class="border-b-2 border-dashed opacity-30 my-8"></div>
+            <div class="text-white opacity-80 flex justify-between items-center">
+                <p>@all rights reserved, P-Ticket services limited.2024</p>
+                <ul class="flex gap-8">
+                    <li><a href="">Terms & condition</a></li>
+                    <li><a href="">Return & refund policy</a></li>
+                    <li><a href="">Privacy policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <!-- footer end -->
 </body>
 
