@@ -1,10 +1,12 @@
-function getElementInnerTextById(elementId){
+function getElementInnerTextById(elementId) {
     const element = document.getElementById(elementId);
     const text = element.innerText;
     return text;
 }
 
-function setElementInnerTextById(elementId, value){
+function setElementInnerTextById(elementId, value) {
     const element = document.getElementById(elementId);
-    element.innerText = value;
+    if (element) {
+        element.innerText = value;
+    }
 }
