@@ -58,3 +58,11 @@ document.querySelector('#apply-btn').addEventListener('click', function () {
         console.log('wrong coupon');
     }
 })
+
+document.querySelector('#phone-number').addEventListener('keyup', function(e){
+    const number = e.target.value;
+    if(number.length === 11){
+        const nextButton = document.querySelector('#next-button');
+        nextButton.removeAttribute('disabled');
+    }
+});
