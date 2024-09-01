@@ -19,7 +19,6 @@ for (let seat of allSeats) {
         setElementInnerTextById('seat-left', updatedLeftSeat);
 
         const seatInfoContainer = document.querySelector('#seat-info-container');
-        console.log(seatInfoContainer);
         const li = document.createElement('li');
         li.innerHTML = `
             <div class="*:text-[#03071299] grid grid-cols-3 mb-4">
@@ -29,6 +28,9 @@ for (let seat of allSeats) {
             </div>
         `
         seatInfoContainer.appendChild(li);
-        
+
+        // set total price
+        const updatedTotalPrice = 550 * seatCount;
+        setElementInnerTextById('total-price', updatedTotalPrice);
     })
 }
