@@ -11,3 +11,8 @@ function getElementValueById(elementId){
     const value = parseInt(elementText);
     return value;
 }
+
+function hideElementById(elementId){
+    const element = document.querySelector(elementId);
+    element.classList.add('hidden');
+}
