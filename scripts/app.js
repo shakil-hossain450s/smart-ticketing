@@ -55,13 +55,13 @@ document.querySelector('#apply-btn').addEventListener('click', function () {
         setElementInnerTextById('grand-total', updatedGrandTotal);
         hideElementById('#coupon-container')
     } else {
-        console.log('wrong coupon');
+        alert('wrong coupon');
     }
 })
 
-document.querySelector('#phone-number').addEventListener('keyup', function(e){
+document.querySelector('#phone-number').addEventListener('keyup', function (e) {
     const number = e.target.value;
-    if(number.length === 11){
+    if (number.length === 11 && seatCount > 0) {
         const nextButton = document.querySelector('#next-button');
         nextButton.removeAttribute('disabled');
     }
