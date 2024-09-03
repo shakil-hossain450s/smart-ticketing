@@ -61,8 +61,10 @@ document.querySelector('#apply-btn').addEventListener('click', function () {
 
 document.querySelector('#phone-number').addEventListener('keyup', function (e) {
     const number = e.target.value;
-    if (number.length === 11 && seatCount > 0) {
-        const nextButton = document.querySelector('#next-button');
+    const nextButton = document.querySelector('#next-button');
+    if (number.length === 11 || seatCount !== 0) {
         nextButton.removeAttribute('disabled');
+    } else {
+        nextButton.setAttribute("disabled", true);
     }
 });
